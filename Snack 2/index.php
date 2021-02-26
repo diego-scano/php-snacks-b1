@@ -6,23 +6,10 @@ conosciamo nella documentazione) che:
 3. age sia un numero.
 Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”. -->
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<?php
 
-    <?php
-
-      if(strlen($_GET["name"]) > 3 && strpos($_GET["mail"], "@") !==false && strpos($_GET["mail"], ".") !==false && is_numeric($_GET["age"])) {
-        echo "Accesso riuscito";
-      } else {
-        echo "Accesso negato";
-      };
-
-    ?>
-
-  </body>
-</html>
+  if(strlen($_GET["name"]) > 3 && strpos($_GET["mail"], "@") !==false && strpos($_GET["mail"], ".") !==false && is_numeric($_GET["age"])) {
+    echo "Accesso riuscito";
+  } else {
+    echo "Accesso negato";
+  };
